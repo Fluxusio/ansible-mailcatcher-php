@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: Fluxus
+  description: Ansible role for configuring Mailcatcher PHP settings
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - Ubuntu 14.04
+  categories:
+    - php
+
+dependencies:
+  - { role: role-mailcatcher }
