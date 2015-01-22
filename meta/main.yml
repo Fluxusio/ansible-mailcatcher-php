@@ -10,4 +10,4 @@ galaxy_info:
     - php
 
 dependencies:
-  - { role: role-mailcatcher }
+  - { role: mailcatcher }
