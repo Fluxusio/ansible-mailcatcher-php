@@ -5,7 +5,7 @@
     dest=/etc/php5/cli/conf.d/mailcatcher.ini
     section="mail function"
     option=sendmail_path
-    value="/usr/bin/env /opt/ruby-1.9.3-p545/bin/catchmail"
+    value="/usr/bin/env /usr/local/bin/mailcatcher"
   sudo: yes
 
 - name: Configure PHP apache2
@@ -13,7 +13,7 @@
     dest=/etc/php5/apache2/conf.d/mailcatcher.ini
     section="mail function"
     option=sendmail_path
-    value="/usr/bin/env /opt/ruby-1.9.3-p545/bin/catchmail"
+    value="/usr/bin/env /usr/local/bin/mailcatcher"
   notify:
     - restart apache
   sudo: yes
